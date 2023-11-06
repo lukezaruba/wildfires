@@ -1,0 +1,64 @@
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#map-container {
+  flex: 1;
+  width: 70%;
+  height: 500px;
+}
+
+#sidenav {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 10;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom left, #f0f0f0, #6a6060);
+}
+
+button {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db; /* Button color */
+  color: #fff; /* Text color */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e87e3; /* Button color on hover */
+}
+
+p {
+  color: #191919; /* Text color */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Arial, sans-serif;
+}
+
+td {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}

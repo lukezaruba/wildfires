@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        <h2>Wildfire Simulation</h2>
+        <table width="50" border="1" cellspacing="0" cellpadding="1">
+          <caption align="TOP">
+            <h3>Legend</h3>
+          </caption>
+          <tbody>
+            <tr>
+              <td bgcolor="#ff0000">&nbsp;Fire</td>
+            </tr>
+            <tr>
+              <td bgcolor="#a5292a">&nbsp;Agriculture</td>
+            </tr>
+            <tr>
+              <td bgcolor="#ffff00">&nbsp;Grass</td>
+            </tr>
+            <tr>
+              <td bgcolor="#008001">&nbsp;Forest</td>
+            </tr>
+            <tr>
+              <td bgcolor="#808080">&nbsp;Urban</tr>
+            </tr>
+            <tr>
+              <td bgcolor="#0000ff">&nbsp;Water</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <br />
+        <p>
+          <b>Start Simulation:</b><br /><br />
+          To start the simulation,<br />click the button below or<br />click any
+          cell on the map.
+        </p>
+        <button type="button" id="startButton">Start Wildfire</button>
+        <br />
+        <p>
+          <b>Reset Simulation:</b><br /><br />
+          To reset the simulation,<br />click the button below.
+        </p>
+        <button type="button" id="resetButton">Reset</button>
+        <br />
+        <p>
+          Jumping Enabled: <span id="status"><b>False</b></span>
+        </p>
+        <button id="toggleButton">Toggle Jumping</button>
+      </div>
+      <div id="map-container">
+        <svg id="svg" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+    </div>
+    <div id="grad"></div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
